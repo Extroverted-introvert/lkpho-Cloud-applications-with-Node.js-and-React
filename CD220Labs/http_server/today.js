@@ -1,4 +1,5 @@
 module.exports.getDate = function getDate() {
     var aestTime = new Date().toLocaleString("en-US", {timeZone: "Australia/Brisbane"});
-    return new Date(aestTime);
+    var greeting = 'Good Morning';
+    return [new Date(aestTime), greeting];
 }
